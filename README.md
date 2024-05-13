@@ -32,8 +32,8 @@ The Histogram of gray scale image and color image is shown.
 ```python
 import cv2
 import matplotlib.pyplot as plt
-gray_image = cv2.imread("cat1.jpg")
-color_image = cv2.imread("cat2.jpg",-1)
+gray_image = cv2.imread("THALA.png")
+color_image = cv2.imread("THALAPATHY.jpg",-1)
 cv2.imshow("Gray Image",gray_image)
 cv2.imshow("Colour Image",color_image)
 cv2.waitKey(0)
@@ -42,8 +42,8 @@ cv2.destroyAllWindows()
 ```python
 import numpy as np
 import cv2
-Gray_image = cv2.imread("cat1.jpg")
-Color_image = cv2.imread("cat2.jpg")
+Gray_image = cv2.imread("THALA.jpg")
+Color_image = cv2.imread("THALAPATHY.jpg")
 import matplotlib.pyplot as plt
 gray_hist = cv2.calcHist([Gray_image],[0],None,[256],[0,256])
 color_hist = cv2.calcHist([Color_image],[0],None,[256],[0,256])
@@ -68,7 +68,7 @@ cv2.waitKey(0)
 ```
 ```python
 import cv2
-gray_image = cv2.imread("cat1.jpg",0)
+gray_image = cv2.imread("THALA.jpg",0)
 cv2.imshow('Grey Scale Image',gray_image)
 equ = cv2.equalizeHist(gray_image)
 cv2.imshow("Equalized Image",equ)
@@ -84,23 +84,22 @@ cv2.destroyAllWindows()
 
 ## Output:
 ### Input Grayscale Image and Color Image
-
-![image](https://github.com/Jerushli/Histogram-of-an-images/assets/120041243/fe9c8925-9c1f-424f-b744-2328750d097f)
+![image](https://github.com/Jerushli/Histogram-of-an-images/assets/120041243/97f8d24d-0483-403b-b7a1-413939328a67)
 
 
 ### Histogram of Grayscale Image and any channel of Color Image
 
 #### Grayscale Image
-![image](https://github.com/Jerushli/Histogram-of-an-images/assets/120041243/6087c353-acdc-41d7-bb3a-d84a143fbf8f)
-
+![image](https://github.com/Jerushli/Histogram-of-an-images/assets/120041243/5e9d0d28-893b-43f4-b6d7-717d3c60e372)
 
 #### Color Image
 
-![image](https://github.com/Jerushli/Histogram-of-an-images/assets/120041243/5d047c25-e1bc-4bd7-9027-d0003e064217)
+![image](https://github.com/Jerushli/Histogram-of-an-images/assets/120041243/248a4c77-9261-4ffc-b385-1464c0e018a8)
 
 
 ### Histogram Equalization of Grayscale Image.
-![image](https://github.com/Jerushli/Histogram-of-an-images/assets/120041243/558a93f6-e8f3-4ad1-be8a-5d5617c33081)
+
+![image](https://github.com/Jerushli/Histogram-of-an-images/assets/120041243/5bf69cad-2daa-4f7c-96ef-4b9f339cd07a)
 
 
 ## Result: 
